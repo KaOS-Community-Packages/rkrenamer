@@ -14,7 +14,7 @@ sha512sums=('b77838a1a857616bb7cdca9d6875bc4fe0c18fcc9f2caea7606ca7e8d71d52199d2
 build(){
     cd trunk/
     qmake-qt5 PREFIX=/usr ${pkgname}.pro
-    make DESTDIR="${pkgdir}"
+    make INSTALL_ROOT="${pkgdir}"
 }
 
 package() {
